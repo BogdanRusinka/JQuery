@@ -25,7 +25,7 @@ Application.init = function (document) {
 };
 
 Application.createForm = function ($baseNode){
-	$baseNode.append($('<form method="post" id="form"><input type="text" id="fromValue" value="1"><select id="convertFrom"></select><input type="text" id="toValue" value="1"><select id="convertTo"></select></form>'));
+	$baseNode.append($('<form method="post" id="form"><input type="text" id="fromValue" value="1"><select id="convertFrom"></select> = <input type="text" id="toValue" value="1"><select id="convertTo"></select></form>'));
 	_$convertFrom = $("select#convertFrom");
 	_$convertTo = $("select#convertTo");
 	for (var name in _metrics){
